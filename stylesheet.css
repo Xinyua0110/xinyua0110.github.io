@@ -133,3 +133,45 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+
+.publication {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.publication-image {
+  flex: 0 0 35%;
+}
+
+.publication-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.publication-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.publication-info p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 600px) {
+  .publication {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .publication-image {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
